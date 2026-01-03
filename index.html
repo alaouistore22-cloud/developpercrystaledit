@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Developer Website | Hero World: Jump &amp; Run</title>
+  <meta name="description" content="Official developer website for Hero World: Jump &amp; Run and other mobile apps." />
+  <style>
+    :root {
+      --c1: rgb(38, 71, 144);
+      --c2: rgb(68, 166, 217);
+      --bg: #0b1220;
+      --card: rgba(255,255,255,.06);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.72);
+      --border: rgba(255,255,255,.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 20% 10%, rgba(68,166,217,.18), transparent 60%),
+                  radial-gradient(900px 700px at 80% 0%, rgba(38,71,144,.25), transparent 55%),
+                  var(--bg);
+      line-height: 1.55;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 16px 60px; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    .brand h1 { margin:0; font-size:26px; }
+    .brand p { margin:6px 0 0; color:var(--muted); }
+    nav a {
+      display:inline-block; padding:10px 12px; border:1px solid var(--border);
+      border-radius:12px; color:var(--text); text-decoration:none; margin-left:8px;
+      background: rgba(255,255,255,.04);
+    }
+    nav a:hover { border-color: rgba(255,255,255,.28); }
+    .hero {
+      margin-top:18px; border:1px solid var(--border); border-radius:18px; padding:18px;
+      background: linear-gradient(135deg, rgba(38,71,144,.22), rgba(68,166,217,.10));
+      box-shadow: 0 10px 40px rgba(0,0,0,.25);
+    }
+    .hero h2 { margin:0 0 8px; font-size:22px; }
+    .hero p { margin:0; color:var(--muted); }
+    .grid { display:grid; grid-template-columns: 1.1fr .9fr; gap:14px; margin-top:14px; }
+    @media (max-width: 820px) { .grid { grid-template-columns: 1fr; } nav a { margin-left:0; margin-right:8px; } }
+    .card {
+      border:1px solid var(--border); border-radius:18px; padding:18px; background: var(--card);
+    }
+    .card h3 { margin:0 0 10px; font-size:18px; }
+    .pill {
+      display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid var(--border);
+      background: rgba(255,255,255,.04); color: var(--muted); font-size:13px;
+    }
+    .btn {
+      display:inline-block; padding:10px 12px; border-radius:12px; border:1px solid rgba(255,255,255,.24);
+      background: rgba(255,255,255,.06); color:var(--text); text-decoration:none; margin-right:8px; margin-top:8px;
+    }
+    .btn.primary { border-color: rgba(68,166,217,.65); background: rgba(68,166,217,.10); }
+    .btn:hover { border-color: rgba(255,255,255,.35); }
+    ul { margin:10px 0 0; padding-left:18px; color: var(--muted); }
+    a { color: var(--text); }
+    .muted { color: var(--muted); }
+    footer { margin-top: 28px; color: rgba(255,255,255,.60); font-size: 13px; }
+    code { background: rgba(255,255,255,.06); padding:2px 6px; border-radius:8px; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>Your Developer Name</h1>
+        <p>Official website • support • privacy policy</p>
+      </div>
+      <nav aria-label="Site navigation">
+        <a href="#apps">Apps</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Hero World: Jump &amp; Run</h2>
+      <p>Run, jump, collect coins, and beat fun levels in a colorful arcade platformer.</p>
+      <p class="muted" style="margin-top:10px">Edit the placeholders (name, email, store links), then upload this file.</p>
+    </section>
+
+    <div class="grid">
+      <section id="apps" class="card">
+        <h3>Apps</h3>
+        <span class="pill">Mobile Game</span>
+        <h4 style="margin:14px 0 6px;font-size:16px">Hero World: Jump &amp; Run</h4>
+        <p class="muted" style="margin:0">A classic jump &amp; run adventure with coins, enemies, and traps.</p>
+        <div style="margin-top:10px">
+          <a class="btn primary" href="#" rel="nofollow">GetApps</a>
+          <a class="btn" href="#" rel="nofollow">RuStore</a>
+        </div>
+        <ul>
+          <li>Classic platform gameplay</li>
+          <li>Simple, responsive controls</li>
+          <li>Colorful 2D cartoon style</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="card">
+        <h3>Support / Contact</h3>
+        <p class="muted" style="margin:0 0 10px">For support, bugs, or business inquiries:</p>
+        <p style="margin:0 0 10px">Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p class="muted" style="margin:0">Privacy Policy URL to submit to stores: <code>https://yourdomain.com/#privacy</code></p>
+      </section>
+    </div>
+
+    <section id="privacy" class="card" style="margin-top:14px">
+      <h3>Privacy Policy</h3>
+      <p class="muted" style="margin-top:0">Last updated: 2026-01-03</p>
+
+      <p>This Privacy Policy explains how we handle information when you use our mobile apps and games, including <strong>Hero World: Jump &amp; Run</strong>.</p>
+
+      <h4 style="margin:14px 0 6px">Information we may collect</h4>
+      <ul>
+        <li><strong>Device information</strong> (device model, OS version, language) to improve compatibility.</li>
+        <li><strong>App usage data</strong> (basic events like openings and screens) to improve gameplay and stability.</li>
+        <li><strong>Crash/diagnostic data</strong> to fix bugs.</li>
+        <li><strong>Advertising data</strong> (ad interactions and identifiers) if the app shows ads.</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px">How we use information</h4>
+      <ul>
+        <li>Provide and maintain the app</li>
+        <li>Improve performance and fix crashes</li>
+        <li>Show ads (if enabled) and measure ad performance</li>
+        <li>Prevent fraud and abuse</li>
+      </ul>
+
+      <h4 style="margin:14px 0 6px">Sharing</h4>
+      <p class="muted">We may share limited data with service providers (such as analytics or advertising partners) only to provide the service. We do not sell personal data.</p>
+
+      <h4 style="margin:14px 0 6px">Children</h4>
+      <p class="muted">Our apps are not intended to collect personal information from children. If you believe a child provided personal data, contact us and we will delete it where possible.</p>
+
+      <h4 style="margin:14px 0 6px">Contact</h4>
+      <p class="muted" style="margin-bottom:0">Questions or deletion requests: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+
+    <footer>© <span id="y"></span> Your Developer Name</footer>
+  </div>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
